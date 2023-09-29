@@ -20,6 +20,7 @@ import { ServerErrorComponent } from './errors/server-error/server-error.compone
 import { MemberCardComponent } from './members/member-card/member-card.component';
 import { MyMemberCardComponent } from './members/my-member-card/my-member-card.component';
 import { JwtInterceptor } from './_interceptors/jwt.interceptor';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { JwtInterceptor } from './_interceptors/jwt.interceptor';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    TabsModule.forRoot()
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },

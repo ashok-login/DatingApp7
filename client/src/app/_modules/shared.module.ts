@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 @NgModule({
   declarations: [],
@@ -12,11 +13,13 @@ import { ToastrModule } from 'ngx-toastr';
     BrowserAnimationsModule,
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right'
-    })
+    }),
+    TabsModule.forRoot()
   ],
   exports: [
     BsDropdownModule,
-    ToastrModule
+    ToastrModule,
+    TabsModule
   ]
 })
 export class SharedModule { }

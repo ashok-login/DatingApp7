@@ -45,3 +45,10 @@
     padding: 15px 0;
   }
   
+  .nav-tabs {
+    --bs-nav-tabs-border-width: 0px;
+  }
+
+  .gallery {
+    height: 600px;
+  }

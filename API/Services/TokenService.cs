@@ -5,6 +5,9 @@ using API.Entities;
 using API.Interfaces;
 using Microsoft.IdentityModel.Tokens;
 
+/* Important point for my reference: Looks like I've not copied this class into Notes. Hence,
+Writing this comment. I need to add below to assemblies to make this class work
+Microsoft.AspNetCore.Authentication.JwtBearer, System.IdentityModel.Tokens.Jwt */
 namespace API.Services
 {
     public class TokenService : ITokenService

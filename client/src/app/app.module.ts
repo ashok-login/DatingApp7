@@ -21,6 +21,7 @@ import { MemberCardComponent } from './members/member-card/member-card.component
 import { MyMemberCardComponent } from './members/my-member-card/my-member-card.component';
 import { JwtInterceptor } from './_interceptors/jwt.interceptor';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { MemberEditComponent } from './members/member-edit/member-edit.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
     NotFoundComponent,
     ServerErrorComponent,
     MemberCardComponent,
-    MyMemberCardComponent
+    MyMemberCardComponent,
+    MemberEditComponent
   ],
   imports: [
     BrowserModule,
